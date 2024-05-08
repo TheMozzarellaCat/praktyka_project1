@@ -1,9 +1,4 @@
-body{
-    margin: 0;
-    height: 200vh;
-    background-color: black;
-}
-header{
-    height: 100vh;
-    background: url(/assets/img/background.webp) center/cover fixed;
-}
+@use 'base';
+@use 'header';
+@use 'main';
+@use 'footer';
