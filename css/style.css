@@ -58,7 +58,7 @@ body {
 
 header {
   height: 100vh;
-  background: url(/assets/img/background.webp) center/cover fixed;
+  background: url(/assets/img/bg-header.webp) center/cover fixed;
   display: flex;
   align-items: center;
   justify-content: center;
