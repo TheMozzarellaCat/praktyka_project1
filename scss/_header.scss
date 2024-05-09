@@ -1,4 +1,5 @@
-$text-color: rgb(255, 228, 196);
+@use 'variables' as *;
+@use 'mixins' as *;
 
 header{
     height: 100vh;
@@ -7,21 +8,63 @@ header{
     align-items: center;
     justify-content: center;
     
-    h1{
-        color: $text-color;
-        filter: drop-shadow(0 0 20px black);
-        font-size: 2rem;
-        font-weight: 700;
-        text-align: center;
-        position: fixed;
-        z-index: 0;
+    .header-box{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 2rem;
+        h1{
+            color: $lg-font-color;
+            font-size: 5rem;
+            line-height: 5rem;
+            font-weight: 700;
+        }   
+        p{
+            color: $lg-font-color;
+            font-size: 2rem;
+            line-height: 3rem;
+            font-weight: 700;
+            display: none;
+        }
+        a{
+            text-decoration: none;
+            color: $lg-font-color;
+            font-size: 1rem;
+            line-height: 1.3rem;
+            margin-top: 2rem;
+        }
 
-        @media  screen and (min-width: 680px) {
-            font-size: 3.4rem;
+        button{
+            height: 4rem;
+            width: 10rem;
+            background-color: $color3;
+            border: 3px solid $color6;
+            border-radius: 5px;
+            margin-top: 2rem;
+            transition: 0.3s;
+            font-size: 1rem;
+            font-weight: 700;
+            &:hover{
+                background-color: $color6;
+                color: $lg-font-color;
+                transform: translateX(10px);
+            }
         }
-        @media  screen and (min-width: 1040px) {
-            font-size: 11.4rem;
-        }
-    }   
+
+        @include sm-screen;
+        @include md-screen;
+        @include lg-screen;
+    }
+
+    &::before{
+        display: block;
+        height: 100vh;
+        width: 100%;
+        content: "";
+        opacity: 0.3;
+        background: $color6;
+    }
 
 }
