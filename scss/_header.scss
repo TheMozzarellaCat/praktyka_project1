@@ -1,70 +1,92 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 
-header{
-    height: 100vh;
-    background: url(/assets/img/bg-header.webp) center/cover fixed;
+header {
+  height: 100vh;
+  background: url(/assets/img/bg-header.webp) center/cover fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .header-box {
+    position: absolute;
+    left: 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    .header-box{
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 0 2rem;
-        h1{
-            color: $lg-font-color;
-            font-size: 5rem;
-            line-height: 5rem;
-            font-weight: 700;
-        }   
-        p{
-            color: $lg-font-color;
-            font-size: 2rem;
-            line-height: 3rem;
-            font-weight: 700;
-            display: none;
-        }
-        a{
-            text-decoration: none;
-            color: $lg-font-color;
-            font-size: 1rem;
-            line-height: 1.3rem;
-            margin-top: 2rem;
-        }
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0 1rem;
+    box-sizing: border-box;
 
-        button{
-            height: 4rem;
-            width: 10rem;
-            background-color: $color3;
-            border: 3px solid $color6;
-            border-radius: 5px;
-            margin-top: 2rem;
-            transition: 0.3s;
-            font-size: 1rem;
-            font-weight: 700;
-            &:hover{
-                background-color: $color6;
-                color: $lg-font-color;
-                transform: translateX(10px);
-            }
-        }
-
-        @include sm-screen;
-        @include md-screen;
-        @include lg-screen;
+    h1 {
+      color: $lg-font-color;
+      font-size: 4rem;
+      line-height: 4.5rem;
+      width: 90%;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+      animation-delay: 0.5s;
     }
 
-    &::before{
-        display: block;
-        height: 100vh;
-        width: 100%;
-        content: "";
-        opacity: 0.3;
-        background: $color6;
+    p {
+      text-decoration: none;
+      color: $lg-font-color;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-top: 2rem;
+      width: 90%;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out forwards;
+      animation-delay: 0.7s;
     }
 
+    button {
+      display: inline-block;
+      outline: none;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 600;
+      border-radius: 8px;
+      padding: 13px 23px;
+      border: 1px solid #222222;
+      transition: 1s;
+      background: #fff;
+      color: #222222;
+      opacity: 0;
+      margin-top: 20px;
+      animation: fadeIn 1s ease-in-out forwards;
+      animation-delay: 0.9s;
+
+      &:hover {
+        background-color: #000000;
+        color: #f7f7f7;
+      }
+    }
+
+    @include sm-screen;
+    @include md-screen;
+    @include lg-screen;
+    @include vr-lg-screen;
+
+  }
+
+  &::before {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    content: "";
+    opacity: 0.3;
+    background: $color6;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
