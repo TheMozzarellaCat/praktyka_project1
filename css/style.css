@@ -58,6 +58,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -299,7 +303,7 @@ header .header-box button {
   animation-delay: 0.9s;
 }
 header .header-box button:hover {
-  background-color: #000000;
+  background-color: #0D0D0D;
   color: #f7f7f7;
 }
 @media screen and (min-width: 680px) {
@@ -397,6 +401,14 @@ header::before {
     opacity: 1;
     transform: translateY(0);
   }
+}
+main section {
+  min-height: 100vh;
+  padding-top: 160px;
+}
+main section h2 {
+  font-size: 4rem;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
