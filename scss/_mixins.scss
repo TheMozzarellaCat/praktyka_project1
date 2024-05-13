@@ -28,6 +28,9 @@
             font-size: 1.5rem;
             line-height: 1.8rem;
         }
+        button{
+            height: 4vh;
+        }
     }
 }
 
@@ -56,9 +59,9 @@
             padding: 0 10rem;
         }
         h1{
-            font-size: 12rem;
-            line-height: 12rem;
-            margin-bottom: 2rem;
+            font-size: 9rem;
+            line-height: 10rem;
+            margin-bottom: 1rem;
         }
 
         p{
@@ -70,6 +73,19 @@
         button{
             margin-top: 6rem;
             font-size: 2rem;
+            height: 8vh;
+        }
+        .logo{
+            font-size: 3.5rem;
+        }
+        .material-icons{
+            font-size: 4rem;
+        }
+        .close{
+            padding-top: 20px;
+        }
+        .navigation{
+            width: 20%;
         }
     }
 }
