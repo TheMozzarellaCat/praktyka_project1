@@ -23,7 +23,7 @@ nav{
 .menu{
     flex-basis: 30%;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 30px;
 }
 .material-icons{
     color: inherit;
@@ -44,7 +44,7 @@ z-index: 3;
 animation: hideMenu .5s;
     .close{
         width: 100%;
-        padding: 20px;
+        padding: 30px;
         padding-top: 10px;
         box-sizing: border-box;
         display: flex;
@@ -104,4 +104,3 @@ ul{
 @include sm-screen;
 @include md-screen;
 @include lg-screen;
-@include vr-lg-screen;

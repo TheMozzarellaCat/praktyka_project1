@@ -1,91 +1,17 @@
 @mixin sm-screen {
     @media  screen and (min-width: 680px) {
-        h1{
-            font-size: 5rem;
-            line-height: 5.5rem;
-        }
-
-        p{
-            font-size: 1.2rem;
-            line-height: 1.6rem;
-            width: 90%;
-        }
-        button{
-            height: 8vh;
-            width: 22vw;
-            font-size: 1rem;
-        }
+        @content;
     }
 }
 
 @mixin md-screen{
     @media screen and (min-width: 800px) {
-        h1{
-            font-size: 6rem;
-            line-height: 6.5rem;
-        }
-        p{
-            font-size: 1.5rem;
-            line-height: 1.8rem;
-        }
-        button{
-            height: 4vh;
-        }
+        @content;
     }
 }
 
 @mixin lg-screen{
     @media  screen and (min-width: 1040px) {
-        h1{
-            font-size: 7rem;
-            line-height: 7.5rem;
-        }
-
-        p{
-            font-size: 1.5rem;
-            line-height: 1.8rem;
-            margin-top: 1rem;
-            width: 80%;
-        }
-        button{
-            font-size: 1.5rem;
-        }
-    }
-}
-
-@mixin vr-lg-screen{
-    @media  screen and (min-width: 1540px) {
-        .header-box{
-            padding: 0 10rem;
-        }
-        h1{
-            font-size: 9rem;
-            line-height: 10rem;
-            margin-bottom: 1rem;
-        }
-
-        p{
-            font-size: 2rem;
-            line-height: 2.2rem;
-            margin-top: 3rem;
-            width: 80%;
-        }
-        button{
-            margin-top: 6rem;
-            font-size: 2rem;
-            height: 8vh;
-        }
-        .logo{
-            font-size: 3.5rem;
-        }
-        .material-icons{
-            font-size: 4rem;
-        }
-        .close{
-            padding-top: 20px;
-        }
-        .navigation{
-            width: 20%;
-        }
+        @content;
     }
 }
