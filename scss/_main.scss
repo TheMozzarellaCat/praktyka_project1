@@ -4,6 +4,10 @@ main{
     section{
         min-height: 100vh;
         padding-top: 160px;
+        
+        &:nth-of-type(even){
+            background-color: whitesmoke;
+        }
         h2{
             font-size: 4rem;
             text-align: center;

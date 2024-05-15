@@ -1,0 +1,9 @@
+@use 'variables' as *;
+footer{
+    height: 30vh;
+    background-color: $color6;
+    color: white;
+
+    display: flex;
+    align-items: center;
+}

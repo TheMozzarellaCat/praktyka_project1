@@ -30,6 +30,9 @@ nav{
     font-size: 2rem;
     cursor: pointer;
     transition: 0.5s;
+    @include lg-screen{
+        font-size: 3rem;
+    }
 }
 
 .navigation{
@@ -49,6 +52,15 @@ animation: hideMenu .5s;
         box-sizing: border-box;
         display: flex;
         justify-content: end;
+        @include lg-screen {
+            padding-top: 20px;
+        }
+    }
+    @include md-screen{
+        width: 40%;
+    }
+    @include lg-screen{
+        width: 20%;
     }
 }
 .active{
@@ -101,6 +113,3 @@ ul{
         }
     }
 }
-@include sm-screen;
-@include md-screen;
-@include lg-screen;
