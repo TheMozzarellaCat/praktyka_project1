@@ -1,4 +1,13 @@
 'use strict';
+
+
+
+
+
+
+
+
+
 const openMenu = document.querySelector(".material-icons");
 const navi = document.querySelector(".navigation");
 const closeMenu = document.querySelector(".close");
@@ -18,4 +27,3 @@ btns.forEach(btn => {
     navi.classList.remove("active")
   })
 });
-
