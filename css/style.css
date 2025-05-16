@@ -261,7 +261,7 @@ ul a:hover {
 header {
   height: 100vh;
   width: 100%;
-  background: url(./assets/img/bg-header.webp) center/cover fixed;
+  background: url(../assets/img/bg-header.webp) center/cover fixed;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -396,16 +396,16 @@ main section p {
   border-top-right-radius: 6px;
 }
 .menu-box .picture1 {
-  background: url(./assets/img/pizza1.webp) center/cover;
+  background: url(../assets/img/pizza1.webp) center/cover;
 }
 .menu-box .picture2 {
-  background: url(./assets/img/pizza2.webp) center/cover;
+  background: url(../assets/img/pizza2.webp) center/cover;
 }
 .menu-box .picture3 {
-  background: url(./assets/img/pizza3.webp) center/cover;
+  background: url(../assets/img/pizza3.webp) center/cover;
 }
 .menu-box .picture4 {
-  background: url(./assets/img/pizza4.webp) center/cover;
+  background: url(../assets/img/pizza4.webp) center/cover;
 }
 .menu-box-text {
   height: 40px;
